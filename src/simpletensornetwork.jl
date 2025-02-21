@@ -8,7 +8,6 @@ mutable struct TensorNetwork <: AbstractDataGraph{Int,IndexedArray,IndexedArray}
     #   But, the latter is not supported by the current implementation of SimpleTensorNetworks.jl.
     #   This may be useful for supporting the Vidal notation.
     data_graph::DataGraph{Int,IndexedArray,IndexedArray,NamedGraph{Int},NamedEdge{Int}}
-
     function TensorNetwork(
         dg::DataGraph{Int,IndexedArray,IndexedArray,NamedGraph{Int},NamedEdge{Int}},
     )
